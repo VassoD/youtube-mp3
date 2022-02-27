@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,400&family=Ubuntu+Mono:ital@0;1&family=Varela+Round&display=swap');
+
+:root{
+  background-color: black;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  color: white;
+  overflow: hidden;
+  font-family: "Montserrat"
+}
+
+.bottom-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+#form{
+  width: 600px;
+  height: 40vh;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+#form h1{
+  font-style: italic;
+  text-shadow: 1px 1px darkgray;
+}
+
+#form input{
+  width: 300px;
+  padding: 14px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid lightgray;
+  font-family: inherit;
+  outline: none;
+  box-shadow: 2px 2px 5px gray;
+}
+
+#form button{
+  padding: 14px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid lightgray;
+  background-color: whitesmoke;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 2px 3px 5px gray;
+  transition: 0.3s ease-out;
+}
+
+#form button:hover{
+  color:white;
+  background-color:  #FF0000;
+  border: 1px solid  #FF0000;
+  transform: scale(1.1);
+}
+
+.errors{
+  width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  padding: 12px;
+  color: #FF0000;
+  background-color: #ffe6e6;
+  border: 1px solid #FF0000;
+}
+
+.success{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+
+#error{
+  color: #FF0000;
+  padding: 16px;
+  width: fit-content;
+  font-style: normal;
+  background-color: #ffe6e6;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  display: none;
+}
+
+#download-btn{
+  width: fit-content;
+  color: black;
+  padding: 12px;
+  color: white;
+  background-color: #FF0000;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px gray;
+  font-style: normal;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: inherit;
+  border: 1px solid #FF0000;
+  transition: 0.3s ease-out;
+}
+
+#download-btn:hover{
+  color:black;
+  background-color:  white;
+  border: 1px solid  lightgray;
+  transform: scale(1.1);
+}
+
+@media(max-width:768px){
+  .bottom-container{
+    width: 90%;
+    margin: auto;
+  }
+
+  #form, .success{
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media(max-width:480px){
+  #form input{
+    width: 50%;
+  }
+}
