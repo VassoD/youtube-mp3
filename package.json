@@ -5,14 +5,15 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VassoD/youtube-mp3.git"
   },
   "author": "VassoDor",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/VassoD/youtube-mp3/issues"
   },
