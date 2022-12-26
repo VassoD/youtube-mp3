@@ -35,7 +35,7 @@ app.post("/convert-mp3", async (req, res) => {
     videoId === "" ||
     videoId === null
   ){
-    return res.render("index", { success : false, message : "Please enter a video ID"});
+    return res.render("index", { success : false, message : "Please enter a video ID (ID starts after = in the video's link"});
   } else {
     
     const fetchAPI = await fetch(`https://youtube-mp36.p.rapidapi.com/dl?id=${videoId}`, {
