@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,400&family=Ubuntu+Mono:ital@0;1&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,400&family=Ubuntu+Mono:ital@0;1&family=Varela+Round&display=swap");
 
-:root{
-  background-color: #0F0F0F;
+:root {
+  background-color: #0f0f0f;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
-body{
+body {
   color: white;
   overflow: hidden;
-  font-family: "Montserrat"
+  font-family: "Montserrat";
 }
 
-.bottom-container{
+.bottom-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 30px;
 }
 
-#form{
+#form {
   width: 600px;
   height: 40vh;
   margin: auto;
@@ -34,12 +34,12 @@ body{
   padding-top: 20px;
 }
 
-#form h1{
+#form h1 {
   font-style: italic;
   text-shadow: 1px 1px darkgray;
 }
 
-#form input{
+#form input {
   width: 300px;
   padding: 14px;
   border-top-left-radius: 5px;
@@ -50,7 +50,7 @@ body{
   /* box-shadow: 2px 2px 5px gray; */
 }
 
-#form button{
+#form button {
   padding: 14px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -62,29 +62,29 @@ body{
   transition: 0.3s ease-out;
 }
 
-#form button:hover{
-  color:white;
-  background-color:  #FF0000;
-  border: 1px solid  #FF0000;
+#form button:hover {
+  color: white;
+  background-color: #ff0000;
+  border: 1px solid #ff0000;
   transform: scale(1.1);
 }
 
-.errors{
+.errors {
   width: 400px;
   margin: auto;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   flex-direction: column;
   gap: 10px;
   border-radius: 5px;
   padding: 12px;
-  color: #FF0000;
+  color: #ff0000;
   background-color: #ffe6e6;
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
 }
 
-.success{
+.success {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,8 +93,8 @@ body{
   color: white;
 }
 
-#error{
-  color: #FF0000;
+#error {
+  color: #ff0000;
   padding: 16px;
   width: fit-content;
   font-style: normal;
@@ -103,12 +103,12 @@ body{
   display: none;
 }
 
-#download-btn{
+#download-btn {
   width: fit-content;
   color: black;
   padding: 12px;
   color: white;
-  background-color: #FF0000;
+  background-color: #ff0000;
   border-radius: 5px;
   text-decoration: none;
   /* box-shadow: 2px 2px 5px gray; */
@@ -116,31 +116,32 @@ body{
   cursor: pointer;
   letter-spacing: 1px;
   font-family: inherit;
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
   transition: 0.3s ease-out;
 }
 
-#download-btn:hover{
-  color:black;
-  background-color:  white;
-  border: 1px solid  lightgray;
+#download-btn:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid lightgray;
   transform: scale(1.1);
 }
 
-@media(max-width:768px){
-  .bottom-container{
+@media (max-width: 768px) {
+  .bottom-container {
     width: 90%;
     margin: auto;
   }
 
-  #form, .success{
+  #form,
+  .success {
     text-align: center;
     width: 100%;
   }
 }
 
-@media(max-width:480px){
-  #form input{
+@media (max-width: 480px) {
+  #form input {
     width: 50%;
   }
 }
